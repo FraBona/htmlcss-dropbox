@@ -52,6 +52,8 @@ ul,li{
   color: white !important; 
 }
 
+/* SECTION TITLE */
+
 
 
 
@@ -76,3 +78,16 @@ ul,li{
   justify-content: space-between;
   align-items: center;
 }
+
+.container-medium{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.col-8{
+  flex-basis: calc((100% / 12) * 8);
+}
+
+.col-4{
+  flex-basis: calc((100% / 12) * 4);
+} 
