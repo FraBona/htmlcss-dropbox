@@ -9,4 +9,70 @@
 
 ul,li{
   list-style-type: none;
+  display: inline-block;
+}
+
+
+/* HEADER */
+#logo{
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.contain-menu{
+  display: inline-block;
+}
+
+.block-header{
+  margin: 0 auto;
+}
+
+.menu__item{
+  padding: 20px 20px;
+}
+
+.menu__item a{
+  color: black;
+  text-decoration: none;
+}
+.menu__item a:visited{
+  text-decoration: none;
+}
+.menu__item a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.btn{
+  background-color: #0061FF;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  color: white !important; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-between{
+  justify-content: space-between;
+  align-items: center;
 }
