@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka:wght@500&family=Kanit:wght@400;600&family=Poppins:wght@500&display=swap');
 
+/* COLOR PANEL */
+:root{
+  --blue: #0061FF;
+  --light-blue: #B4D0E7;
+  --dark: black;
+  --bordeaux: #61082B;
+  --dark-blue: #0D2481;
+  --green: #A2D39B;
+  --yellow: #FFD830;
+  --red: #FF1C1C;
+  --dark-red: #D5001F;
+  --light-gray: #f5f5f5;
+  --light: #ffffff; 
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -28,32 +43,37 @@ ul,li{
   margin: 0 auto;
 }
 
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .menu__item{
   padding: 20px 20px;
 }
-a{
+
+.menu__item a{
   color: black;
   text-decoration: none;
 }
-a:visited{
+.menu__item a:visited{
   text-decoration: none;
 }
-a:hover{
+.menu__item a:hover{
   text-decoration: underline;
-  color: black;
+  color: black; 
 }
 
 .btn{
-  background-color: #0061FF;
+  background-color: var(--blue);
   border: none;
   padding: 10px 20px;
   text-align: center;
   color: white !important; 
 }
-
 /* SECTION TITLE */
 .section-title{
-  background-color: rgb(180, 208, 231);
+  background-color: var(--light-blue)
 }
 
 .title{
@@ -62,7 +82,7 @@ a:hover{
 }
 
 .div-main{
-  margin: 30px 0;
+  padding: 30px 0;
 }
 
 .down-arrow{
@@ -74,9 +94,33 @@ a:hover{
   width: 100%;
 }
 
+/* SECTION BUSINESS */
+.section-business{
+  margin: 100px 0px;
+}
 
+.div-business{
+  margin: 50px 0px;
+}
 
+.title-business{
+  font-size: 60px;
+  padding: 50px 0px;
+}
 
+.btn-radio{
+  padding-right: 20px;
+}
+
+.col-business{
+  border: 1px solid var(--light-gray);
+}
+
+.col-tag{
+  text-align: center;
+  font-size: 10px;
+  text-transform: lowercase;
+}
 
 
 
@@ -98,8 +142,19 @@ a:hover{
   align-items: center;
 }
 
+
 .container-medium{
   max-width: 1500px;
+  margin: 0 auto;
+}
+
+.container-small{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid{
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -110,3 +165,12 @@ a:hover{
 .col-4{
   flex-basis: calc((100% / 12) * 4);
 } 
+
+
+/* DEBUG */
+.debug .col-4{
+  min-height: 200px;
+
+  padding: 20px;
+  border: 2px dashed black;
+}
