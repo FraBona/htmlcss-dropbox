@@ -27,20 +27,26 @@ ul,li{
   display: inline-block;
 }
 
+.style-a a{
+  color: black;
+  text-decoration: none;
+}
+
+.style-a a:visited{
+  text-decoration: none;
+}
+
+.style-a a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
 
 /* HEADER */
 #logo{
   padding-right: 10px;
   padding-top: 20px;
-  padding-left: 10px;
-}
-
-.contain-menu{
-  display: inline-block;
-}
-
-.block-header{
-  margin: 0 auto;
+  padding-left: 0px;
 }
 
 .menu{
@@ -52,24 +58,12 @@ ul,li{
   padding: 20px 20px;
 }
 
-.menu__item a{
-  color: black;
-  text-decoration: none;
-}
-.menu__item a:visited{
-  text-decoration: none;
-}
-.menu__item a:hover{
-  text-decoration: underline;
-  color: black; 
-}
-
 .btn{
   background-color: var(--blue);
   border: none;
   padding: 10px 20px;
   text-align: center;
-  color: white !important; 
+  color: var(--light) !important; 
 }
 /* SECTION TITLE */
 .section-title{
@@ -87,7 +81,7 @@ ul,li{
 
 .down-arrow{
   font-size: 50px;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .jumbo-image{
@@ -103,6 +97,11 @@ ul,li{
   margin: 50px 0px;
 }
 
+.card{
+  display: flex;
+  flex-direction: column;
+}
+
 .title-business{
   font-size: 60px;
   padding: 50px 0px;
@@ -116,10 +115,37 @@ ul,li{
   border: 1px solid var(--light-gray);
 }
 
-.col-tag{
+.card-height{
+  min-height: 750px;
+}
+
+.card__title{
   text-align: center;
-  font-size: 10px;
-  text-transform: lowercase;
+  font-size: 15px;
+}
+
+.card__section{
+  padding: 20px 10px;
+}
+
+.section__btn{
+  display: block;
+  margin: 10px 0px;
+}
+
+.padding-item{
+  padding: 10px 0px;
+}
+
+.card__flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.style-icon{
+  color: green;
 }
 
 
@@ -164,7 +190,16 @@ ul,li{
 
 .col-4{
   flex-basis: calc((100% / 12) * 4);
-} 
+}
+
+.col-12{
+  width: 100%;
+}
+
+.row > [class^='col']{
+  padding: 0 25px;
+  
+}
 
 
 /* DEBUG */
