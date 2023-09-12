@@ -183,7 +183,14 @@ ul,li{
   font-size: 25px;
 }
 
+/*SECTION TITLE E ANCORA*/
+.section-title-still_title{
+  font-size: 50px;
+}
 
+.section-title-still__margin{
+  margin: 50px 0px;
+}
 
 
 
