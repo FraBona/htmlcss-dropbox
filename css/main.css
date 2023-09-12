@@ -148,6 +148,24 @@ ul,li{
   color: green;
 }
 
+/*SECTION PARTNER DROPBOX*/
+.partner__title{
+  font-size: 30px;
+}
+
+.flex-partner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-partner{
+  background-color: white;
+  color: black !important;
+  border: 1px solid black;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
 
 
 
