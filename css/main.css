@@ -166,6 +166,23 @@ ul,li{
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
+/*SECTION DROPBOX BUSINESS*/
+.business-dropbox{
+  margin: 150px 0px;
+}
+
+.business-title{
+  font-size: 50px;
+}
+
+.padding-business{
+  padding: 10px 12px;
+}
+
+.image-title{
+  font-size: 25px;
+}
+
 
 
 
